@@ -8,3 +8,6 @@ https://api.census.gov/data/2010/dec/sf1/variables.html
 
 API by state
 https://api.census.gov/data/2010/dec/sf1?get=NAME,P001001&for=state:*&key=59a41ecf0dff091bd991b35c87176ffd56b8107d
+
+API by country and State
+https://api.census.gov/data/2010/dec/sf1?get=NAME,P001001&for=county:*&in=state:01&key=59a41ecf0dff091bd991b35c87176ffd56b8107d
