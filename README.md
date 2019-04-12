@@ -23,3 +23,6 @@ Activity 17-2-4
 ###Radio
 
 Radio scrape in jupyter notebook code - updated to pull all states instead of just NY
+
+###Regions
+https://www.cmaworld.com/new-cma-world-2/wp-content/uploads/sites/18/2016/09/Country-Music-is-Country-Wide.pdf
