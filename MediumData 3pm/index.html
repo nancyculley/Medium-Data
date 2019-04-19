@@ -14,7 +14,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ash</title>
+
     <script src="https://code.highcharts.com/highcharts.js"></script>
     <script src="https://code.highcharts.com/highcharts-3d.js"></script>
     <script src="https://code.highcharts.com/modules/exporting.js"></script>
@@ -31,9 +31,7 @@
 
   <!-- Bring in our bootstrap stylesheet -->
 
-  <link rel="stylesheet" 
-
-  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
@@ -47,15 +45,30 @@
     <script src="Pie_ky.js"></script>
     <script src="Pie_tn.js"></script>
     
-    
-    
-    
+    <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.css">
 
+      
 </head>
 
 
 
 <body>
+
+  <!-- D3 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.5.0/d3.min.js"></script>
+
+  <!-- Leaflet JavaScript -->
+  <script src="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.js"></script>
+
+  <!-- Our CSS -->
+  <link rel="stylesheet" type="text/css" href="css/style.css"> 
+
+  <!-- API Key -->
+  <script type="text/javascript" src="config.js"></script>
+  <!-- Our JavaScript -->
+  <script type="text/javascript" src="StateData.js"></script>
+  <script type="text/javascript" src="USA-MAP.js"></script>
 
      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
@@ -145,7 +158,7 @@
 
     <!-- Main Body: Twitter bootstrap -->
 
-      <div style="background-color:gray;">
+    <div style="background-color:gray;">
 
         <div class="row">
 
@@ -159,13 +172,13 @@
 
         </div>
 
-      </div> <!-- background color -->
+    </div> <!-- background color -->
 
         <!-- Header -->
 
-    <div class = 'container-fluid'>
+    <div class = 'container-fluid' >
 
-        <div class="row align-items-center">
+        <div class="row align-items-center" style="border: 2px solid black">
 
             <div class = 'col-md-4'></div>
 
@@ -181,7 +194,7 @@
 
         <!-- line breaks to push header down -->
 
-        <div class="row">
+        <div class="row" style="border: 2px solid black">
 
             <div class="col-md-12">
 
@@ -197,46 +210,9 @@
 
         <!-- main content -->
 
-        <div class="row">
-
-        <div class="col-lg-6">
-
-            </br>
-
-            <a target="_blank" href="resources\Data.PNG">
-
-                <img src="resources\Data.PNG"
-
-                alt = "City Data" height="600" width="600">
-
-            </a>
-
-        </div>
-
-        <div class="col-lg-6">
-
-                <p class="description"> &emsp;TXTTXTTXTTXTTXTTXTTXT
-
-                </br>
-
-                </br>
-
-               TXTTXTTXTTXTTXTTXTTXTTXTTXTTXT
-
-                </br>
-
-                </br>
-
-                TXTTXTTXTTXTTXTTXTTXTTXTTXTTXTTXT
-
-                </p>
-
-                
-
-            </div>
-
-            
-
+        <div class="row" style="border: 2px solid black">
+        <!-- Our US map will go here -->
+            <div id="map-id" class="col-md-12" style="height:550px;"> this is map</div>
         </div>
 
     </div>
