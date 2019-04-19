@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+
+  <meta charset="UTF-8">
+
+<!-- Insert title here -->
+
+  <title>KENTUCKY</title>
+
+
+
+  <!-- reset css -->
+
+  <link rel="stylesheet" href="reset.css">
+
+  <!-- Bring in our bootstrap stylesheet -->
+
+  <link rel="stylesheet" 
+
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/highcharts-3d.js"></script>
+  <script src="https://code.highcharts.com/modules/exporting.js"></script>
+  <script src="https://code.highcharts.com/modules/export-data.js"></script>
+  
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/highcharts-more.js"></script>
+
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+
+
+<body>
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+
+  <!-- A black horizontal navbar that becomes vertical on small screens -->
+
+  <nav class="navbar navbar-expand-sm navbar-dark">
+
+    <a class="nav-link" href="index.html">
+
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button> 
+
+    </a>
+
+    <ul class="navbar-nav">
+
+      <!-- Home button -->
+
+      <li class="nav-item active">
+
+        <a class="nav-link" href="index.html">  
+
+        US Overview</a>
+
+      </li>
+
+    </ul>
+
+
+
+    <!-- right side of navbar -->
+      <ul class="navbar-nav ml-auto">
+
+            <li class="nav-item dropdown ml-auto">
+
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbarDropdownMenuLink" href="#" role="button" 
+
+                aria-haspopup="true" aria-expanded="false">Targets</a>
+
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+
+                    <a class="dropdown-item" href="Florida.html">Florida</a>
+
+                    <a class="dropdown-item" href="Kentucky.html">Kentucky</a>
+
+                    <a class="dropdown-item" href="Tennessee.html">Tennessee</a>
+
+                    <a class="dropdown-item" href="Texas.html">Texas</a>
+
+                </div>
+
+        </li> 
+
+        <li class="nav-item">
+
+            <a class="nav-link" href="Comparisons_pg.html">Comparison
+
+            </a>
+
+        </li>
+
+        <li class="nav-item">
+
+            <a class="nav-link" href="Data_pg.html">Data</a>
+
+        </li>
+
+    </ul>
+
+  </nav>
+
+
+
+  <!-- Main Content -->
+
+  <div style="background-color:gray;">
+
+    <div class='row'>
+
+        <div class="col-md-4">
+
+        </div>
+
+        <div class="col-md-4">
+
+            </br> <!-- line spacing -->
+
+            </br>
+
+        </div>
+
+        <div class="col-md-4">
+
+        </div>
+
+    </div>
+
+  </div> <!-- ends background color -->
+
+
+
+    <!-- Header -->
+
+    <div class='row align-items-center'>
+
+        <div class="col-md-4">
+
+            </br>
+
+            </br>
+
+        </div>
+
+        <div class="col-lg-4">
+
+            <h1 class="intro">Kentucky Target Segment</h1>
+
+            </br>
+
+            </br>
+
+        </div>
+
+        <div class="col-md-4">
+
+            </br>
+
+            </br>
+
+        </div>
+
+    </div> 
+
+    
+
+ 
+  <!-- first row of graphs -->
+
+    <div class="row">
+
+<!--
+        <div class="col-md-1">
+
+        </div>
+-->
+
+        <div class="col-md-4">
+
+            </br>
+
+        <!--   <div id="container" style="height: 600", style = "width: 500"></div> -->
+    <div id="containerky" style="min-width: 310px; max-width: 500px; height: 400px; margin: 0 auto;"></div>
+       
+
+        </div>
+
+        <div class="col-md-4">
+
+            </br>
+
+              <!--   <div id="container" style="height: 600", style = "width: 500"></div> -->
+    <div id="container1" style="min-width: 310px; max-width: 500px; height: 400px; margin: 0 auto;"></div>
+       
+
+        </div>
+
+        <div class="col-md-4">
+            
+            </br>
+
+              <!--   <div id="container2" style="height: 600", style = "width: 500"></div> -->
+    <div id="container2" style="min-width: 310px; max-width: 500px; height: 400px; margin: 0 auto;"></div>             
+
+        </div>
+
+    </div>
+
+
+
+    <!-- second row of graphs -->
+
+    <div class="row">
+
+        <div class="col-md-1">
+
+        </div>
+
+        <div class="col-lg-5">
+
+<!--
+             <!--   <div id="container" style="height: 600", style = "width: 500"></div> -->
+<!--    <div id="container2" style="min-width: 310px; max-width: 600px; height: 400px; margin: 0 auto;"></div>-->
+-->
+
+        </div>
+
+        <div class="col-lg-5">
+
+<!--
+            <!--   <div id="container" style="height: 600", style = "width: 500"></div> -->
+<!--    <div id="container2" style="min-width: 310px; max-width: 600px; height: 400px; margin: 0 auto;"></div>-->
+-->
+
+        </div>
+
+        <div class="col-md-1">
+
+        </div>
+
+    </div>
+
+ 
+
+
+
+   <!-- Visualizations -->
+
+        <!-- Header -->
+
+       <div id = "bottom_visual" class="container"> 
+
+        <div class="row">
+
+            <div class="col-md-12">
+
+                </br> <!-- line break to push header down -->
+
+            </div>
+
+        </div>
+
+        <hr> <!-- horizontal line -->
+
+
+
+        <!-- Header content for visualization section -->
+
+        <div class="row align-items-center">
+
+            <div class = 'col-md-4'></br></br></br></div>
+
+            <div class="col-lg-4">
+
+                <h3 id="bot_header">Visualizations</h3>
+
+            </div>
+
+            <div class = 'col-md-4'></br></br></br></div>
+
+        </div>
+
+
+
+        <div class="row">
+
+            <div class="col-lg-3">
+
+                <a href="Tennessee.html">
+
+                    <img src="TN.PNG"
+
+                    alt = "Tennessee" height="225" width="250">
+
+                </a>
+
+            </div>
+
+            <div class="col-lg-3">
+
+                <a href="Florida.html">
+
+                        <img src="FL.PNG"
+
+                        alt = "Florida" height="225" width="250">
+
+                </a>
+
+            </div>
+
+            <div class="col-lg-3">
+
+                <a href="Texas.html">
+
+                    <img src="TX.PNG"
+
+                    alt = "Texas" height="225" width="250">
+
+                </a>
+
+            </div>
+
+            <div class="col-lg-3">
+
+                <a href="Kentucky.html">
+
+                        <img src="Kentucky.PNG"
+
+                        alt = "Kentucky" height="225" width="250">
+
+                </a>
+
+            </div>
+
+        </div>
+
+      
+
+        <!-- reference to github and my github page -->
+
+            <p> 
+
+                This page is hosted on Github. &emsp;
+
+                <a target="_blank" href="https://github.com/abklinka/Lat_Dashboard">
+
+                    Web page repo link.
+
+                </a> &emsp;
+
+                
+                <a target="_blank" href="https://github.com/abklinka">See more projects here!</a>
+
+                &emsp; Contact: Medium Data
+
+            </p> 
+
+        <hr>
+
+      </div>
+
+<script src="style.css"></script>
+<script src="bubble_Kentucky.js"></script>
+<script src="Pie_ky.js"></script>
+<script src="Kentuckychart.js"></script>
+
+
+
+</body>
+
+</html>

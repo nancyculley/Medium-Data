@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+
+    <meta charset="UTF-8">
+
+<!-- Insert title here -->
+
+    <title>Census Data &amp;</title>
+
+
+
+    <!-- reset css -->
+
+    <link rel="stylesheet" href="reset.css">
+
+    <!-- Bring in our bootstrap stylesheet -->
+
+    <link rel="stylesheet" 
+
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- javascript from w3schools to include convertcsv.htm table into current page -->
+
+    <script src="https://www.w3schools.com/lib/w3.js"></script> 
+
+</head>
+
+
+
+<body>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+
+    <!-- A black horizontal navbar that becomes vertical on small screens -->
+
+    <nav class="navbar navbar-expand-sm navbar-dark">
+
+        <a class="nav-link" href="index.html">
+
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button> 
+
+        </a>
+
+        <ul class="navbar-nav">
+
+            <!-- Home button -->
+
+            <li class="nav-item active">
+
+                <a class="nav-link" href="index.html">  
+
+                    Country in the US!</a>
+
+            </li>
+
+        </ul>
+
+
+
+    <!-- right side of navbar -->
+
+    <ul class="navbar-nav ml-auto">
+
+            <li class="nav-item dropdown ml-auto">
+
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbarDropdownMenuLink" href="#" role="button" 
+
+                aria-haspopup="true" aria-expanded="false">Targets</a>
+
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+
+                    <a class="dropdown-item" href="Florida.html">Florida</a>
+
+                    <a class="dropdown-item" href="Kentucky.html">Kentucky</a>
+
+                    <a class="dropdown-item" href="Tennessee.html">Tennessee</a>
+
+                    <a class="dropdown-item" href="Texas.html">Texas</a>
+
+                </div>
+
+
+        </li> 
+
+        <li class="nav-item">
+
+            <a class="nav-link" href="Comparisons_pg.html">Comparison
+
+            </a>
+
+        </li>
+
+        <li class="nav-item">
+
+            <a class="nav-link" href="Data_pg.html">Data</a>
+
+        </li>
+
+    </ul>
+
+    </nav>
+
+    <!-- Line Break -->
+
+    <div style="background-color:gray;">
+
+        <div class="row">
+
+            <div class="col-md-12">
+
+                </br>
+
+                </br>
+
+            </div>
+
+        </div>
+
+    </div> <!-- ends background color -->
+
+
+
+    <!-- Header -->
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-4"></div>
+
+            <div class="col-md-4">
+
+                <h1 class="intro">2010 Census Data </h1>
+
+            </div>
+
+            <div class="col-md-4"> </br></br></br></br></br> </div>
+
+        </div>
+
+        <hr> <!-- horizontal line -->
+
+
+
+        
+    <!-- Visualizations -->
+
+    <!-- Header --> 
+
+<table class="table table-bordered table-hover table-condensed table-responsive">
+  <thead>    <tr style="text-align: right;">      <th></th>      <th>State</th>      <th>Population</th>      <th>American Indian and Alaska Native</th>      <th>Asian</th>      <th>Black or African American</th>      <th>Hispanic or Latino</th>      <th>Native Hawaiian or Other Pacific Islander</th>      <th>Other Race</th>      <th>Two or More Races</th>      <th>White</th>      <th>1 or 2 Persons</th>      <th>3 or 4 Persons</th>      <th>5 or More Persons</th>      <th>Median Income LTM</th>      <th>House Owned Free and Clear</th>      <th>House Owned with Mortgage</th>      <th>Rent</th>    </tr>  </thead>  <tbody>    <tr>      <th>0</th>      <td>Alabama</td>      <td>4779736</td>      <td>28218</td>      <td>53595</td>      <td>1251311</td>      <td>185602</td>      <td>3057</td>      <td>96910</td>      <td>71251</td>      <td>3275394</td>      <td>1148987</td>      <td>568267</td>      <td>166537</td>      <td>20693</td>      <td>480579</td>      <td>832010</td>      <td>571202</td>    </tr>    <tr>      <th>1</th>      <td>Alaska</td>      <td>710231</td>      <td>104871</td>      <td>38135</td>      <td>23263</td>      <td>39249</td>      <td>7409</td>      <td>11102</td>      <td>51875</td>      <td>473576</td>      <td>149925</td>      <td>76015</td>      <td>32118</td>      <td>16794</td>      <td>50753</td>      <td>112012</td>      <td>95293</td>    </tr>    <tr>      <th>2</th>      <td>Arizona</td>      <td>6392017</td>      <td>296529</td>      <td>176695</td>      <td>259008</td>      <td>1895149</td>      <td>12648</td>      <td>761716</td>      <td>218300</td>      <td>4667121</td>      <td>1435963</td>      <td>640981</td>      <td>304046</td>      <td>21901</td>      <td>439025</td>      <td>1132662</td>      <td>809303</td>    </tr>    <tr>      <th>3</th>      <td>Arkansas</td>      <td>2915918</td>      <td>22248</td>      <td>36102</td>      <td>449895</td>      <td>186050</td>      <td>5863</td>      <td>99571</td>      <td>57010</td>      <td>2245229</td>      <td>712903</td>      <td>329269</td>      <td>104912</td>      <td>20099</td>      <td>298502</td>      <td>469654</td>      <td>378928</td>    </tr>    <tr>      <th>4</th>      <td>California</td>      <td>37253956</td>      <td>362801</td>      <td>4861007</td>      <td>2299072</td>      <td>14013719</td>      <td>144386</td>      <td>6317372</td>      <td>1815384</td>      <td>21453934</td>      <td>6583244</td>      <td>3927263</td>      <td>2066991</td>      <td>27459</td>      <td>1570026</td>      <td>5465345</td>      <td>5542127</td>    </tr>    <tr>      <th>5</th>      <td>Louisiana</td>      <td>4533372</td>      <td>30579</td>      <td>70132</td>      <td>1452396</td>      <td>192560</td>      <td>1963</td>      <td>69227</td>      <td>72883</td>      <td>2836192</td>      <td>1017610</td>      <td>532427</td>      <td>178323</td>      <td>21121</td>      <td>474834</td>      <td>687465</td>      <td>566061</td>    </tr>    <tr>      <th>6</th>      <td>Kentucky</td>      <td>4339367</td>      <td>10120</td>      <td>48930</td>      <td>337520</td>      <td>132836</td>      <td>2501</td>      <td>55551</td>      <td>75208</td>      <td>3809537</td>      <td>1064994</td>      <td>510205</td>      <td>144766</td>      <td>20958</td>      <td>424187</td>      <td>757084</td>      <td>538694</td>    </tr>    <tr>      <th>7</th>      <td>Colorado</td>      <td>5029196</td>      <td>56010</td>      <td>139028</td>      <td>201737</td>      <td>1038687</td>      <td>6623</td>      <td>364140</td>      <td>172456</td>      <td>4089202</td>      <td>1223821</td>      <td>557888</td>      <td>191159</td>      <td>24819</td>      <td>288123</td>      <td>1004977</td>      <td>679768</td>    </tr>    <tr>      <th>8</th>      <td>Connecticut</td>      <td>3574097</td>      <td>11256</td>      <td>135565</td>      <td>362296</td>      <td>479087</td>      <td>1428</td>      <td>198466</td>      <td>92676</td>      <td>2772410</td>      <td>816743</td>      <td>423774</td>      <td>130570</td>      <td>31582</td>      <td>244326</td>      <td>680960</td>      <td>445801</td>    </tr>    <tr>      <th>9</th>      <td>Delaware</td>      <td>897934</td>      <td>4181</td>      <td>28549</td>      <td>191814</td>      <td>73221</td>      <td>400</td>      <td>30519</td>      <td>23854</td>      <td>618617</td>      <td>204996</td>      <td>102744</td>      <td>34557</td>      <td>27016</td>      <td>69591</td>      <td>177133</td>      <td>95573</td>    </tr>    <tr>      <th>10</th>      <td>District of Columbia</td>      <td>601723</td>      <td>2079</td>      <td>21056</td>      <td>305125</td>      <td>54749</td>      <td>302</td>      <td>24374</td>      <td>17316</td>      <td>231471</td>      <td>195276</td>      <td>52953</td>      <td>18478</td>      <td>24762</td>      <td>21939</td>      <td>90116</td>      <td>154652</td>    </tr>    <tr>      <th>11</th>      <td>Florida</td>      <td>18801310</td>      <td>71458</td>      <td>454821</td>      <td>2999862</td>      <td>4223806</td>      <td>12286</td>      <td>681144</td>      <td>472577</td>      <td>14109162</td>      <td>4664943</td>      <td>2053063</td>      <td>702796</td>      <td>21784</td>      <td>1650115</td>      <td>3348864</td>      <td>2421823</td>    </tr>    <tr>      <th>12</th>      <td>Georgia</td>      <td>9687653</td>      <td>32151</td>      <td>314467</td>      <td>2950435</td>      <td>853689</td>      <td>6799</td>      <td>388872</td>      <td>207489</td>      <td>5787440</td>      <td>2039612</td>      <td>1136412</td>      <td>409560</td>      <td>21749</td>      <td>602771</td>      <td>1751631</td>      <td>1231182</td>    </tr>    <tr>      <th>13</th>      <td>Hawaii</td>      <td>1360301</td>      <td>4164</td>      <td>525078</td>      <td>21424</td>      <td>120842</td>      <td>135422</td>      <td>16985</td>      <td>320629</td>      <td>336599</td>      <td>245337</td>      <td>137290</td>      <td>72711</td>      <td>29669</td>      <td>77075</td>      <td>185607</td>      <td>192656</td>    </tr>    <tr>      <th>14</th>      <td>Idaho</td>      <td>1567582</td>      <td>21441</td>      <td>19069</td>      <td>9810</td>      <td>175901</td>      <td>2317</td>      <td>79523</td>      <td>38935</td>      <td>1396487</td>      <td>341916</td>      <td>162869</td>      <td>74623</td>      <td>22154</td>      <td>117932</td>      <td>286971</td>      <td>174505</td>    </tr>    <tr>      <th>15</th>      <td>Illinois</td>      <td>12830632</td>      <td>43963</td>      <td>586934</td>      <td>1866414</td>      <td>2027578</td>      <td>4050</td>      <td>861412</td>      <td>289982</td>      <td>9177877</td>      <td>2856220</td>      <td>1416198</td>      <td>564554</td>      <td>27427</td>      <td>925146</td>      <td>2338493</td>      <td>1573333</td>    </tr>    <tr>      <th>16</th>      <td>Indiana</td>      <td>6483802</td>      <td>18462</td>      <td>102474</td>      <td>591397</td>      <td>389707</td>      <td>2348</td>      <td>173314</td>      <td>127901</td>      <td>5467906</td>      <td>1526113</td>      <td>725459</td>      <td>250582</td>      <td>24986</td>      <td>488150</td>      <td>1259825</td>      <td>754179</td>    </tr>    <tr>      <th>17</th>      <td>Iowa</td>      <td>3046355</td>      <td>11084</td>      <td>53094</td>      <td>89148</td>      <td>151544</td>      <td>2003</td>      <td>56132</td>      <td>53333</td>      <td>2781561</td>      <td>793355</td>      <td>320697</td>      <td>107524</td>      <td>25893</td>      <td>306647</td>      <td>573988</td>      <td>340941</td>    </tr>    <tr>      <th>18</th>      <td>Kansas</td>      <td>2853118</td>      <td>28150</td>      <td>67762</td>      <td>167864</td>      <td>300042</td>      <td>2238</td>      <td>110127</td>      <td>85933</td>      <td>2391044</td>      <td>691734</td>      <td>307026</td>      <td>113336</td>      <td>24827</td>      <td>250707</td>      <td>502825</td>      <td>358564</td>    </tr>    <tr>      <th>19</th>      <td>Maine</td>      <td>1328361</td>      <td>8568</td>      <td>13571</td>      <td>15707</td>      <td>16935</td>      <td>342</td>      <td>4261</td>      <td>20941</td>      <td>1264971</td>      <td>373228</td>      <td>148350</td>      <td>35641</td>      <td>22184</td>      <td>133199</td>      <td>264218</td>      <td>159802</td>    </tr>    <tr>      <th>20</th>      <td>Maryland</td>      <td>5773552</td>      <td>20420</td>      <td>318853</td>      <td>1700298</td>      <td>470632</td>      <td>3157</td>      <td>206832</td>      <td>164708</td>      <td>3359284</td>      <td>1242541</td>      <td>672260</td>      <td>241610</td>      <td>28638</td>      <td>309139</td>      <td>1146636</td>      <td>700636</td>    </tr>    <tr>      <th>21</th>      <td>Massachusetts</td>      <td>6547629</td>      <td>18850</td>      <td>349768</td>      <td>434398</td>      <td>627654</td>      <td>2223</td>      <td>305151</td>      <td>172003</td>      <td>5265236</td>      <td>1545429</td>      <td>770892</td>      <td>230754</td>      <td>30845</td>      <td>409685</td>      <td>1177473</td>      <td>959917</td>    </tr>    <tr>      <th>22</th>      <td>Michigan</td>      <td>9883640</td>      <td>62007</td>      <td>238199</td>      <td>1400362</td>      <td>436358</td>      <td>2604</td>      <td>147029</td>      <td>230319</td>      <td>7803120</td>      <td>2387127</td>      <td>1107797</td>      <td>377584</td>      <td>24674</td>      <td>873097</td>      <td>1920245</td>      <td>1079166</td>    </tr>    <tr>      <th>23</th>      <td>Minnesota</td>      <td>5303925</td>      <td>60916</td>      <td>214234</td>      <td>274412</td>      <td>250258</td>      <td>2156</td>      <td>103000</td>      <td>125145</td>      <td>4524062</td>      <td>1308394</td>      <td>582415</td>      <td>196418</td>      <td>28968</td>      <td>414454</td>      <td>1109405</td>      <td>563368</td>    </tr>    <tr>      <th>24</th>      <td>Mississippi</td>      <td>2967297</td>      <td>15030</td>      <td>25742</td>      <td>1098385</td>      <td>81481</td>      <td>1187</td>      <td>38162</td>      <td>34107</td>      <td>1754684</td>      <td>650602</td>      <td>345332</td>      <td>119834</td>      <td>18402</td>      <td>322665</td>      <td>454408</td>      <td>338695</td>    </tr>    <tr>      <th>25</th>      <td>Missouri</td>      <td>5988927</td>      <td>27376</td>      <td>98083</td>      <td>693391</td>      <td>212470</td>      <td>6261</td>      <td>80457</td>      <td>124589</td>      <td>4958770</td>      <td>1494792</td>      <td>667010</td>      <td>213809</td>      <td>23591</td>      <td>514818</td>      <td>1118792</td>      <td>742001</td>    </tr>    <tr>      <th>26</th>      <td>Montana</td>      <td>989415</td>      <td>62555</td>      <td>6253</td>      <td>4027</td>      <td>28565</td>      <td>668</td>      <td>5975</td>      <td>24976</td>      <td>884961</td>      <td>275750</td>      <td>101453</td>      <td>32404</td>      <td>22130</td>      <td>107182</td>      <td>171236</td>      <td>131189</td>    </tr>    <tr>      <th>27</th>      <td>Nebraska</td>      <td>1826341</td>      <td>18427</td>      <td>32293</td>      <td>82885</td>      <td>167405</td>      <td>1279</td>      <td>79109</td>      <td>39510</td>      <td>1572838</td>      <td>457967</td>      <td>191584</td>      <td>71579</td>      <td>25185</td>      <td>163249</td>      <td>321481</td>      <td>236400</td>    </tr>    <tr>      <th>28</th>      <td>Nevada</td>      <td>2700551</td>      <td>32062</td>      <td>195436</td>      <td>218626</td>      <td>716501</td>      <td>16871</td>      <td>324793</td>      <td>126075</td>      <td>1786688</td>      <td>591156</td>      <td>286053</td>      <td>129041</td>      <td>24867</td>      <td>126451</td>      <td>465029</td>      <td>414770</td>    </tr>    <tr>      <th>29</th>      <td>New Hampshire</td>      <td>1316470</td>      <td>3150</td>      <td>28407</td>      <td>15035</td>      <td>36704</td>      <td>384</td>      <td>12062</td>      <td>21382</td>      <td>1236050</td>      <td>321980</td>      <td>155881</td>      <td>41112</td>      <td>26271</td>      <td>101328</td>      <td>266988</td>      <td>150657</td>    </tr>    <tr>      <th>30</th>      <td>New Jersey</td>      <td>8791894</td>      <td>29026</td>      <td>725726</td>      <td>1204826</td>      <td>1555144</td>      <td>3043</td>      <td>559722</td>      <td>240303</td>      <td>6029248</td>      <td>1768903</td>      <td>1064136</td>      <td>381321</td>      <td>32278</td>      <td>570453</td>      <td>1532012</td>      <td>1111895</td>    </tr>    <tr>      <th>31</th>      <td>New Mexico</td>      <td>2059179</td>      <td>193222</td>      <td>28208</td>      <td>42550</td>      <td>953403</td>      <td>1810</td>      <td>308503</td>      <td>77010</td>      <td>1407876</td>      <td>481591</td>      <td>219393</td>      <td>90411</td>      <td>20336</td>      <td>204552</td>      <td>337570</td>      <td>249273</td>    </tr>    <tr>      <th>32</th>      <td>New York</td>      <td>19378102</td>      <td>106906</td>      <td>1420244</td>      <td>3073800</td>      <td>3416922</td>      <td>8766</td>      <td>1441563</td>      <td>585849</td>      <td>12740974</td>      <td>4346440</td>      <td>2145970</td>      <td>825345</td>      <td>29747</td>      <td>1287714</td>      <td>2610123</td>      <td>3419918</td>    </tr>    <tr>      <th>33</th>      <td>North Carolina</td>      <td>9535483</td>      <td>122110</td>      <td>208962</td>      <td>2048628</td>      <td>800120</td>      <td>6604</td>      <td>414030</td>      <td>206199</td>      <td>6528950</td>      <td>2299282</td>      <td>1114404</td>      <td>331469</td>      <td>21752</td>      <td>755995</td>      <td>1741905</td>      <td>1247255</td>    </tr>    <tr>      <th>34</th>      <td>North Dakota</td>      <td>672591</td>      <td>36591</td>      <td>6909</td>      <td>7960</td>      <td>13467</td>      <td>320</td>      <td>3509</td>      <td>11853</td>      <td>605449</td>      <td>191094</td>      <td>69071</td>      <td>21027</td>      <td>24895</td>      <td>78926</td>      <td>105017</td>      <td>97249</td>    </tr>    <tr>      <th>35</th>      <td>Ohio</td>      <td>11536504</td>      <td>25292</td>      <td>192233</td>      <td>1407681</td>      <td>354674</td>      <td>4066</td>      <td>130030</td>      <td>237765</td>      <td>9539437</td>      <td>2896640</td>      <td>1295146</td>      <td>411649</td>      <td>24846</td>      <td>934573</td>      <td>2176481</td>      <td>1492381</td>    </tr>    <tr>      <th>36</th>      <td>Oklahoma</td>      <td>3751351</td>      <td>321687</td>      <td>65076</td>      <td>277644</td>      <td>332007</td>      <td>4369</td>      <td>154409</td>      <td>221321</td>      <td>2706845</td>      <td>903810</td>      <td>412525</td>      <td>144115</td>      <td>21759</td>      <td>370494</td>      <td>611266</td>      <td>478690</td>    </tr>    <tr>      <th>37</th>      <td>Oregon</td>      <td>3831074</td>      <td>53203</td>      <td>141263</td>      <td>69206</td>      <td>450062</td>      <td>13404</td>      <td>204625</td>      <td>144759</td>      <td>3204614</td>      <td>965091</td>      <td>412023</td>      <td>141824</td>      <td>24582</td>      <td>266365</td>      <td>678120</td>      <td>574453</td>    </tr>    <tr>      <th>38</th>      <td>Pennsylvania</td>      <td>12702379</td>      <td>26843</td>      <td>349088</td>      <td>1377689</td>      <td>719660</td>      <td>3653</td>      <td>300983</td>      <td>237835</td>      <td>10406288</td>      <td>3138918</td>      <td>1441566</td>      <td>438420</td>      <td>25184</td>      <td>1223048</td>      <td>2268674</td>      <td>1527182</td>    </tr>    <tr>      <th>39</th>      <td>Rhode Island</td>      <td>1052567</td>      <td>6058</td>      <td>30457</td>      <td>60189</td>      <td>130655</td>      <td>554</td>      <td>63653</td>      <td>34787</td>      <td>856869</td>      <td>256001</td>      <td>121349</td>      <td>36250</td>      <td>27019</td>      <td>65784</td>      <td>185168</td>      <td>162648</td>    </tr>    <tr>      <th>40</th>      <td>South Carolina</td>      <td>4625364</td>      <td>19524</td>      <td>59051</td>      <td>1290684</td>      <td>235682</td>      <td>2706</td>      <td>113464</td>      <td>79935</td>      <td>3060000</td>      <td>1101313</td>      <td>536001</td>      <td>163867</td>      <td>20687</td>      <td>423388</td>      <td>825417</td>      <td>552376</td>    </tr>    <tr>      <th>41</th>      <td>South Dakota</td>      <td>814180</td>      <td>71817</td>      <td>7610</td>      <td>10207</td>      <td>22119</td>      <td>394</td>      <td>7477</td>      <td>17283</td>      <td>699392</td>      <td>210313</td>      <td>81844</td>      <td>30125</td>      <td>23758</td>      <td>85744</td>      <td>133814</td>      <td>102724</td>    </tr>    <tr>      <th>42</th>      <td>Tennessee</td>      <td>6346105</td>      <td>19994</td>      <td>91242</td>      <td>1057315</td>      <td>290059</td>      <td>3642</td>      <td>141955</td>      <td>110009</td>      <td>4921948</td>      <td>1530632</td>      <td>737901</td>      <td>225019</td>      <td>21153</td>      <td>579876</td>      <td>1120716</td>      <td>792960</td>    </tr>    <tr>      <th>43</th>      <td>Texas</td>      <td>25145561</td>      <td>170972</td>      <td>964596</td>      <td>2979598</td>      <td>9460921</td>      <td>21656</td>      <td>2628186</td>      <td>679001</td>      <td>17701552</td>      <td>4866683</td>      <td>2795324</td>      <td>1260926</td>      <td>23543</td>      <td>1956366</td>      <td>3728987</td>      <td>3237580</td>    </tr>    <tr>      <th>44</th>      <td>Utah</td>      <td>2763885</td>      <td>32927</td>      <td>55285</td>      <td>29287</td>      <td>358340</td>      <td>24554</td>      <td>166754</td>      <td>75518</td>      <td>2379560</td>      <td>420987</td>      <td>272504</td>      <td>184201</td>      <td>24976</td>      <td>146206</td>      <td>471931</td>      <td>259555</td>    </tr>    <tr>      <th>45</th>      <td>Vermont</td>      <td>625741</td>      <td>2207</td>      <td>7947</td>      <td>6277</td>      <td>9208</td>      <td>160</td>      <td>2105</td>      <td>10753</td>      <td>596292</td>      <td>169122</td>      <td>70905</td>      <td>16415</td>      <td>23514</td>      <td>57814</td>      <td>123593</td>      <td>75035</td>    </tr>    <tr>      <th>46</th>      <td>Virginia</td>      <td>8001024</td>      <td>29225</td>      <td>439890</td>      <td>1551399</td>      <td>631825</td>      <td>5980</td>      <td>254278</td>      <td>233400</td>      <td>5486852</td>      <td>1819758</td>      <td>940604</td>      <td>295696</td>      <td>23865</td>      <td>520749</td>      <td>1534437</td>      <td>1000872</td>    </tr>    <tr>      <th>47</th>      <td>Washington</td>      <td>6724540</td>      <td>103869</td>      <td>481067</td>      <td>240042</td>      <td>755790</td>      <td>40475</td>      <td>349799</td>      <td>312926</td>      <td>5196362</td>      <td>1615851</td>      <td>744657</td>      <td>259568</td>      <td>27280</td>      <td>428656</td>      <td>1245264</td>      <td>946156</td>    </tr>    <tr>      <th>48</th>      <td>West Virginia</td>      <td>1852994</td>      <td>3787</td>      <td>12406</td>      <td>63124</td>      <td>22268</td>      <td>428</td>      <td>6119</td>      <td>27142</td>      <td>1739988</td>      <td>495645</td>      <td>214316</td>      <td>53870</td>      <td>20071</td>      <td>267491</td>      <td>293522</td>      <td>202818</td>    </tr>    <tr>      <th>49</th>      <td>Wisconsin</td>      <td>5686986</td>      <td>54526</td>      <td>129234</td>      <td>359148</td>      <td>336056</td>      <td>1827</td>      <td>135867</td>      <td>104317</td>      <td>4902067</td>      <td>1459757</td>      <td>624068</td>      <td>195943</td>      <td>26954</td>      <td>469459</td>      <td>1082099</td>      <td>728210</td>    </tr>    <tr>      <th>50</th>      <td>Wyoming</td>      <td>563626</td>      <td>13336</td>      <td>4426</td>      <td>4748</td>      <td>50231</td>      <td>427</td>      <td>17049</td>      <td>12361</td>      <td>511279</td>      <td>147048</td>      <td>59697</td>      <td>20134</td>      <td>25498</td>      <td>57296</td>      <td>99781</td>      <td>69802</td>    </tr>    <tr>      <th>51</th>      <td>Puerto Rico</td>      <td>3725789</td>      <td>19839</td>      <td>6831</td>      <td>461498</td>      <td>3688455</td>      <td>370</td>      <td>289905</td>      <td>122246</td>      <td>2825100</td>      <td>719012</td>      <td>508806</td>      <td>148713</td>      <td>0</td>      <td>554508</td>      <td>431657</td>      <td>390366</td>    </tr>    <tr>      <th>52</th>      <td>US</td>      <td>312471327</td>      <td>2952087</td>      <td>14681083</td>      <td>39390817</td>      <td>54166049</td>      <td>540383</td>      <td>19397273</td>      <td>9131319</td>      <td>226378365</td>      <td>70166549</td>      <td>34892037</td>      <td>13034237</td>      <td>1245145</td>      <td>23561152</td>      <td>53411087</td>      <td>41120584</td>    </tr>  </tbody></table>
+
+        <!-- With new footer positions in the CSS file that forces it to the bottom! -->
+
+     <div id = "bottom_visual" class="container"> 
+
+        <div class="row">
+
+            <div class="col-md-12">
+
+                </br> <!-- line break to push header down -->
+
+            </div>
+
+        </div>
+
+        <hr> <!-- horizontal line -->
+
+
+
+        <!-- Header content for visualization section -->
+
+        <div class="row align-items-center">
+
+            <div class = 'col-md-4'></br></br></br></div>
+
+            <div class="col-lg-4">
+
+                <h3 id="bot_header">Visualizations</h3>
+
+            </div>
+
+            <div class = 'col-md-4'></br></br></br></div>
+
+        </div>
+
+
+
+        <div class="row">
+
+            <div class="col-lg-3">
+
+                <a href="Tennessee.html">
+
+                    <img src="TN.PNG"
+
+                    alt = "Tennessee" height="225" width="250">
+
+                </a>
+
+            </div>
+
+            <div class="col-lg-3">
+
+                <a href="Florida.html">
+
+                        <img src="FL.PNG"
+
+                        alt = "Florida" height="225" width="250">
+
+                </a>
+
+            </div>
+
+            <div class="col-lg-3">
+
+                <a href="Texas.html">
+
+                    <img src="TX.PNG"
+
+                    alt = "Texas" height="225" width="250">
+
+                </a>
+
+            </div>
+
+            <div class="col-lg-3">
+
+                <a href="Kentucky.html">
+
+                        <img src="Kentucky.PNG"
+
+                        alt = "Kentucky" height="225" width="250">
+
+                </a>
+
+
+            </div>
+
+        </div>
+
+    
+
+
+
+        <!-- reference to github and my github page -->
+
+        <p> 
+
+            This page is hosted on Github. &emsp;
+
+            <a target="_blank" href="https://github.com/abklinka/Lat_Dashboard">
+
+                    Web page repo link.
+
+                </a> &emsp;
+
+                
+
+                <a target="_blank" href="https://github.com/abklinka">See more projects here!</a>
+
+                &emsp; Contact: Medium Data
+
+        </p> 
+
+        <hr>
+
+    </div>
+
+    </div> <!-- ends bootstrap container for main content (maybe?) -->
+
+</body>
+
+</html>
