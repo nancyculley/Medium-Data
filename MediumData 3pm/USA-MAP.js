@@ -1,5 +1,5 @@
 
-    var myMap = L.map('map-id').setView([37.8, -96], 4);
+    var myMap = L.map('map-id').setView([32, -96], 4);
 
 
     L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}", {
@@ -96,7 +96,7 @@ info.onAdd = function (Map) {
 
 // method that we will use to update the control based on feature properties passed
 info.update = function (props) {
-    this._div.innerHTML = '<h4>US Radio Stations</h4>' +  (props ?
+    this._div.innerHTML = '<h4>Country Radio Stations</h4>' +  (props ?
         '<b>' + props.name + '</b><br />' + props.density + ' Country Radio Stations'
         : 'Hover over a state');
 };

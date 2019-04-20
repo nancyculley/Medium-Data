@@ -21,8 +21,8 @@ Highcharts.chart('container', {
         title: {enabled: true, text: "Income by State, $ "}
     },
     
-    tooltip:{
-    headerFormat: '<b>{series}</b><br>',
+  tooltip:{
+    headerFormat: '<b></b><br>',
                      pointFormat: '${point.y}'
                   },
 

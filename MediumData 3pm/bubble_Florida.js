@@ -22,7 +22,7 @@ Highcharts.chart('container', {
     },
     
     tooltip:{
-    headerFormat: '<b>{series}</b><br>',
+    headerFormat: '<b></b><br>',
                      pointFormat: '${point.y}'
                   },
 
