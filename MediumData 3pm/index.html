@@ -32,8 +32,8 @@
   <!-- Bring in our bootstrap stylesheet -->
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ 
+ <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
 
   <link rel="stylesheet" href="styles.css">
      <script src="bubble_Texas.js"></script>
@@ -64,11 +64,7 @@
   <!-- Our CSS -->
   <link rel="stylesheet" type="text/css" href="css/style.css"> 
 
-  <!-- API Key -->
-  <script type="text/javascript" src="config.js"></script>
-  <!-- Our JavaScript -->
-  <script type="text/javascript" src="StateData.js"></script>
-  <script type="text/javascript" src="USA-MAP.js"></script>
+
 
      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
@@ -120,7 +116,7 @@
 
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbarDropdownMenuLink" href="#" role="button" 
 
-                aria-haspopup="true" aria-expanded="false">Plot</a>
+                aria-haspopup="true" aria-expanded="false">Target States</a>
 
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
 
@@ -144,11 +140,23 @@
 
             </li>
 
-            <li class="nav-item">
+            <li class="nav-item dropdown ml-auto">
 
-                <a class="nav-link" href="Data_pg.html">Data</a>
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbarDropdownMenuLink" href="#" role="button" 
 
-            </li>
+                aria-haspopup="true" aria-expanded="false">Data</a>
+
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+
+                    <a class="dropdown-item" href="Data_pg.html">Census data</a>
+
+                    <a class="dropdown-item" href="Radio_data.html">Radio station data</a>
+
+
+                </div>
+
+            </li> 
+
 
         </ul>
 
@@ -182,9 +190,9 @@
 
             <div class = 'col-md-4'></div>
 
-            <div class="col-lg-4">
+            <div class="col-lg-12">
 
-                <h1 class="intro">Which States Can Handle More Country Music?</h1>
+                <h3 class="intro">Which States have the most country stations?</h3>
 
             </div>
 
@@ -319,7 +327,7 @@
 
             This page is hosted on Github. &emsp;
 
-            <a target="_blank" href="https://github.com/abklinka/Lat_Dashboard">
+            <a target="_blank" href="https://github.com/nancyculley/Medium-Data">
 
                 Web page repo link.
 
@@ -327,7 +335,7 @@
 
             
 
-            <a target="_blank" href="https://github.com/abklinka">See more projects here!</a>
+            <a target="_blank" href="https://github.com/nancyculley/">See more projects here!</a>
 
             &emsp; Contact: Medium Data
 
@@ -336,6 +344,15 @@
         <hr>
 
     </div>
+
+  <!-- API Key -->
+  <script type="text/javascript" src="config.js"></script>
+  <!-- Our JavaScript -->
+  
+  <script type="text/javascript" src="https://leafletjs.com/examples/choropleth/us-states.js"></script>
+  <script type="text/javascript" src="StateData.js"></script>
+  <script type="text/javascript" src="USA-MAP.js"></script>
+
 
 </body>
 

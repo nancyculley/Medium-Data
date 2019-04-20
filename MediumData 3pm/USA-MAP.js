@@ -27,10 +27,10 @@ $.getJSON('Station_Counts.json', function(data) {
 
 function getColor(d) {
     console.log(d);
-    return d > 100  ? '#FC4E2A' :
-           d > 50   ? '#FD8D3C' :
-           d > 20   ? '#FEB24C' :
-           d > 10   ? '#FED976' :
+    return d > 99  ? '#9D0F0F' :
+           d > 74  ? '#FD8D3C' :
+           d > 49   ? '#FEB24C' :
+           d > 24   ? '#FED976' :
                       '#FFEDA0';
 }
 
